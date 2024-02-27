@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "72aaab42-cbce-4d15-b702-23ff4fa2eef2",
+		"name": "totvs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28092693"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "salvar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Higão\",\r\n    \"endereco\": \"Rua Vaticana\",\r\n    \"bairro\": \"Jd. Santo André\",\r\n    \"telefones\": [\r\n        {\r\n            \"numTelefone\": \"11 9 65700350\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
